@@ -16,6 +16,7 @@ HEADERS += \
     $$PWD/include/QGeoView/QGVLayerBing.h \
     $$PWD/include/QGeoView/QGVLayerGoogle.h \
     $$PWD/include/QGeoView/QGVLayerOSM.h \
+    $$PWD/include/QGeoView/QGVLayerOsmAndTile.h \
     $$PWD/include/QGeoView/QGVLayerBDGEx.h \
     $$PWD/include/QGeoView/QGVLayerTiles.h \
     $$PWD/include/QGeoView/QGVLayerTilesOnline.h \
@@ -29,7 +30,8 @@ HEADERS += \
     $$PWD/include/QGeoView/QGVWidgetCompass.h \
     $$PWD/include/QGeoView/QGVWidgetScale.h \
     $$PWD/include/QGeoView/QGVWidgetText.h \
-    $$PWD/include/QGeoView/QGVWidgetZoom.h
+    $$PWD/include/QGeoView/QGVWidgetZoom.h \
+    $$PWD/include/QGeoView/QGVLayerTilesOffline.h
 
 SOURCES += \
     $$PWD/src/QGVCamera.cpp \
@@ -42,6 +44,7 @@ SOURCES += \
     $$PWD/src/QGVLayerBing.cpp \
     $$PWD/src/QGVLayerGoogle.cpp \
     $$PWD/src/QGVLayerOSM.cpp \
+    $$PWD/src/QGVLayerOsmAndTile.cpp \
     $$PWD/src/QGVLayerBDGEx.cpp \
     $$PWD/src/QGVLayerTiles.cpp \
     $$PWD/src/QGVLayerTilesOnline.cpp \
@@ -55,7 +58,8 @@ SOURCES += \
     $$PWD/src/QGVWidgetCompass.cpp \
     $$PWD/src/QGVWidgetScale.cpp \
     $$PWD/src/QGVWidgetText.cpp \
-    $$PWD/src/QGVWidgetZoom.cpp
+    $$PWD/src/QGVWidgetZoom.cpp \
+    $$PWD/src/QGVLayerTilesOffline.cpp
 
 INCLUDEPATH += \
     $$PWD/include/ \
