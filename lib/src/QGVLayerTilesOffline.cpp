@@ -9,7 +9,7 @@ void QGVLayerTilesOffline::onProjection(QGVMap* geoMap)
 
 void QGVLayerTilesOffline::request(const QGV::GeoTilePos& tilePos)
 {
-    auto rawFile = QFile{ tilePosToUrl(tilePos) };
+    QFile rawFile{ tilePosToUrl(tilePos) };
 
     if (!rawFile.exists() || !rawFile.open(QIODevice::ReadOnly))
         return;
