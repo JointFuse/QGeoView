@@ -43,6 +43,7 @@ public:
     void deleteItems();
     int countItems() const;
     QGVItem* getItem(int index) const;
+    bool hasItem(QGVItem* item) const { return mChildrens.contains(item); }
 
     void setZValue(qint16 zValue);
     qint16 getZValue() const;

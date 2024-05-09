@@ -21,6 +21,7 @@
 #include "QGVMapQGItem.h"
 #include "QGVMapQGView.h"
 #include "QGVProjectionEPSG3857.h"
+#include "QGVProjectionWSG84.h"
 #include "QGVWidget.h"
 
 #include <QMouseEvent>
@@ -86,6 +87,9 @@ void QGVMap::setProjection(QGV::Projection id)
     switch (id) {
         case QGV::Projection::EPSG3857:
             setProjection(new QGVProjectionEPSG3857());
+            break;
+        case QGV::Projection::WSG84:
+            setProjection(new QGVProjectionWSG84());
             break;
     }
 }

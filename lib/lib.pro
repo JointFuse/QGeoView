@@ -26,12 +26,14 @@ HEADERS += \
     $$PWD/include/QGeoView/QGVMapRubberBand.h \
     $$PWD/include/QGeoView/QGVProjection.h \
     $$PWD/include/QGeoView/QGVProjectionEPSG3857.h \
+    $$PWD/include/QGeoView/QGVProjectionWSG84.h \
     $$PWD/include/QGeoView/QGVWidget.h \
     $$PWD/include/QGeoView/QGVWidgetCompass.h \
     $$PWD/include/QGeoView/QGVWidgetScale.h \
     $$PWD/include/QGeoView/QGVWidgetText.h \
     $$PWD/include/QGeoView/QGVWidgetZoom.h \
-    $$PWD/include/QGeoView/QGVLayerTilesOffline.h
+    $$PWD/include/QGeoView/QGVLayerTilesOffline.h \
+    $$PWD/include/QGeoView/WGS84toCartesian.hpp
 
 SOURCES += \
     $$PWD/src/QGVCamera.cpp \
@@ -54,6 +56,7 @@ SOURCES += \
     $$PWD/src/QGVMapRubberBand.cpp \
     $$PWD/src/QGVProjection.cpp \
     $$PWD/src/QGVProjectionEPSG3857.cpp \
+    $$PWD/src/QGVProjectionWSG84.cpp \
     $$PWD/src/QGVWidget.cpp \
     $$PWD/src/QGVWidgetCompass.cpp \
     $$PWD/src/QGVWidgetScale.cpp \

@@ -37,6 +37,7 @@ namespace QGV {
 enum class Projection
 {
     EPSG3857,
+    WSG84,
 };
 
 enum class TilesType
