@@ -60,6 +60,8 @@ protected:
     void onUpdate() override;
     void onClean() override;
 
+    void prepareGeometryChange();
+
 private:
     QGV::ItemFlags mFlags;
     QScopedPointer<QGVMapQGItem> mQGDrawItem;

@@ -33,6 +33,8 @@ public:
 
     void resetGeometry();
 
+    using QGraphicsItem::prepareGeometryChange;
+
 private:
     QRectF boundingRect() const override final;
     void paint(QPainter* painter, const QStyleOptionGraphicsItem* option, QWidget* widget = 0) override final;

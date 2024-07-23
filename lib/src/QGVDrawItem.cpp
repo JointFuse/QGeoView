@@ -230,3 +230,9 @@ void QGVDrawItem::onClean()
     QGVItem::onClean();
     mQGDrawItem.reset(nullptr);
 }
+
+void QGVDrawItem::prepareGeometryChange()
+{
+    if (!mQGDrawItem.isNull())
+        mQGDrawItem->prepareGeometryChange();
+}
